@@ -1,10 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>TESTING ONE TWO THREE</title>
+    <title>Home</title>
+    <meta name="Welcom" content="This is my First website">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        ul li { list-style: none; display: inline; }
+        ul li:after { content: " \00b7"; }
+        ul li:last-child:after { content: none; }
+        body{
+            background-color: peachpuff;
+            background-position: 400% 40%;
+            background-repeat: repeat;
+        }
+        .hero{
+            position: relative;
+            width: 100vw;
+            height: 67vw;
+        }
+        .hero::before {
+            content: url("");
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 67%;
+            background: url("images/coffee.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            filter: brightness(60%);
+        }
+        .hero-content {
+            position: relative;
+            font-family: "Sama Gurmukhi", sans-serif;
+            color: olive;
+            text-align: center;
+            margin: 0.625rem;
+        }
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        .hero-subtitle{
+            color: white;
+            font-size: 2rem;
+            font-weight: 150;
+            margin: 0;
+        }
+        .hero-button {
+            background-color: grey;
+            margin: 1px solid #e0ffff;
+            bottom: 30px;
+            padding: 15px;
+            font-family: "Sama Gurmukhi", sans-serif;
+            font-size: 1.125rem;
+            cursor: pointer;
+        }
+        .hero-button:hover{
+            background-color: gray;
+            border: 1px solid coral;
+        }
+        #primarylinks{
+            float: top;
+            color: white;
+            display: inline-block;
+            width: max-content;
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 40px;
+            right: 10px;
+            margin-left: 400px;
+        }
+        #Fter{
+            position: relative;
+            float: right;
+            bottom: -10px;
+        }
+
+    </style>
 </head>
 <body>
+<div id=logo>
+    <img width= "99px" src="pictures/1kqf_opm.png" alt="protein">
+</div>
+<div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+        <a href="index.html" style="color: aliceblue">Home </a>
+        <a href="aboutme.html" style="color: aliceblue" >About Me</a>
+        <a href="#">Link 3</a>
+    </div>
+</div>
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">
 
+        </h1>
+        <h2 class="hero-subtitle">
+
+    </div>
+    </h2>
+    <button type="button" class="hero-button" onclick= "location.href='content.html'"
+    <p/>Learn about the History of the Internet</p>
+    </button>
+
+    </div>
+
+    </h2>
+</section>
+
+<footer>
+    <div id="Fter" style="color: lightcyan">
+        CopyRight Kashish Bhatt IS601
+    </div>
+
+    <div id="validator">
+        <a href="https://validator.w3.org" style="color: lightcyan">W3C validator</a>
+    </div>
+</footer>
 </body>
+</div>
 </html>
